@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo Element</title>
+    <style>
+        h3{
+           color: peru;
+        }
+        h3:hover{
+            color: tomato;
+            background-color: skyblue;
+        }
+        /* for focus area */
+        input:focus{
+            color: red;
+            outline: 0;
+            border: 1px solid red;
+        }
+        /* for changre visited color */
+        a:visited{
+            color: grey;
+        }
+
+        /* for Showing Single Child and Evev Odd Child Design */
+        /* li:last-child {
+            color: red;
+        } */
+         /* li:first-child{
+            background-color: aqua;
+         } */
+        /* li:nth-child(2n){
+            color: purple;
+        } */
+        li:nth-child(2n+1){
+            color: red;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <h3>My Heading</h3>
+    <input type="text"><br>
+    <input type="text"><br>
+    <input type="text"><br>
+    <a href="https://www.w3schools.com/html/default.asp">W3</a><br>
+    <a href="https://www.bbc.com/">BBC</a><br>
+
+    <ul>
+        <li>Mona</li>
+        <li>Sona</li>
+        <li>Dona</li>
+        <li>Rona</li>
+        <li>Lona</li>
+        <li>Pona</li>
+        <li>Kona</li>
+    </ul>
+
 </body>
 </html>
